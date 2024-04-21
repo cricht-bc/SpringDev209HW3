@@ -18,7 +18,7 @@
             } else {
                 movieArray.push({ title, rating, year });
 
-                let output = "";
+                let output;
                 for (let i = 0; i < movieArray.length; i++) {
                     let movie = movieArray[i];
                     output += "Movie " + (i + 1) + ": Title - " + movie.title + ", Rating - " + movie.rating + ", Year - " + movie.year + "<br>";
