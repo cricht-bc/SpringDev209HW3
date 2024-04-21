@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3</title>
+
+    <script>
+        function addToArray(){
+            const movieArray = [];
+
+            let title = document.getElementById("title");
+            let rating = document.getElementById("rating");
+            let year = document.getElementById("year");
+
+            if (title == "" && rating == null && year == null){
+                alert("Error, an input is empty");
+            }else{
+                movieArray.push(title, rating, year);
+                document.getElementById('out').innerHTML = movieArray.join('<br />');
+            }
+        }
+    </script>
+
+    <style>
+       body {background-color:bisque;}
+       h3 {color: forestgreen} 
+       p {color: red}
+       #out {background-color: burlywood;}
+
+    </style>
+</head>
+<body>
+<form>
+<H3> Movie's Title:<H3> 
+<input type="text" id="title">
+<H3> Movie's Rating:<H3> 
+<input type="number" id="rating">
+<H3> Movie's Title:<H3> 
+<input type="date" id="year">
+
+<input type="button" onclick="addToArray()" text="Add Movie"></input>
+</form>
+
+<p id="out">
+
+</p>
+
+</body>
+</html>
