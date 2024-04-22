@@ -9,7 +9,7 @@ let movieArray = [];
           alert("Error: One or more input fields are empty");
         } else {
             movieArray.push({ title, rating, year });
-            alert("Movie added successfully!");
+            document.getElementById("out").innerHTML = "Entry Added";
         }
     }
 

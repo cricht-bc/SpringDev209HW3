@@ -1,4 +1,15 @@
-body {background-color:bisque;}
-h3 {color: forestgreen} 
-p {color: red}
-#out {background-color: burlywood;}
+body {
+    background-color: bisque;
+}
+
+h3 {
+    color: forestgreen;
+}
+
+p {
+    color: red;
+}
+
+#out {
+    background-color: burlywood;
+}
