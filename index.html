@@ -5,34 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW3</title>
 
-    <script>
-        function addToArray(){
-            const movieArray = [];
-
-            let title = document.getElementById("title").value.trim();
-            let rating = document.getElementById("rating").value.trim();
-            let year = document.getElementById("year").value.trim();
-
-            if (title === "" || rating === "" || year === ""){
-                alert("Error: One or more input fields are empty");
-            } else {
-                movieArray.push({ title, rating, year });
-
-                let output;
-                for (let i = 0; i < movieArray.length; i++) {
-                    let movie = movieArray[i];
-                    output += "Movie " + (i + 1) + ": Title - " + movie.title + ", Rating - " + movie.rating + ", Year - " + movie.year + "<br>";
-                }
-                document.getElementById("out").innerHTML = output;
-            }
-        }
+    <script src="main.js">
     </script>
 
-    <style>
-       body {background-color:bisque;}
-       h3 {color: forestgreen} 
-       p {color: red}
-       #out {background-color: burlywood;}
+    <style src="style.css">
     </style>
 </head>
 <body>
@@ -44,7 +20,8 @@
 <H3> Movie's Year:<H3> 
 <input type="date" id="year">
 
-<input type="button" onclick="addToArray()" value="Add Movie"></input>
+<input type="button" onclick="addToArray()" text="Add Movie">Add Movie</input>
+<input type="button" onclick="showArray()" text="Show All">Show All</input>
 </form>
 
 <p id="out">
